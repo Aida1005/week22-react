@@ -111,9 +111,15 @@ class App extends React.Component{
       <div className="App">
   {
     heroes.map((hero) =>
-        <Hero key={hero.name} universe={hero.universe} alterego={hero.alterego} occupation={hero.occupation} friends={hero.friends} 
-            superpowers={hero.superpowers} url={hero.url} info={hero.info}></Hero>
-    )
+<Hero 
+key={hero.name} 
+universe={hero.universe} 
+alterego={hero.alterego} 
+occupation={hero.occupation} 
+friends={hero.friends} 
+superpowers={hero.superpowers}
+url={hero.url} info={hero.info}></Hero>
+)
   }
       </div>
     );
